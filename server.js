@@ -16,10 +16,10 @@ var PORT = process.env.PORT || 8080;
 
 
 //Set up express to handle data parsing
-applicationCache.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 
 //parse applicaiton/json
-applicationCache.use(bodyParser.json());
+app.use(bodyParser.json());
 
 //set up handlebars
 app.engine("handlebars", exphbs({defaultLayout: "main"}));
@@ -27,7 +27,7 @@ app.set("view engine", "handlebars");
 
 
 //Set up static directory 
-applicationCache.use(express.static("public"));
+app.use(express.static("public"));
 
 //add in database dependency for models
 var db = require("./models");
@@ -39,6 +39,7 @@ var db = require("./models");
 //==================================================
 //insert routes here################################
 require("./controllers/siteUser.js")(app);
+require("./controllers/htmlRoutes.js")(app);
 
 
 //Sync the sequelize models and have express begin listenint to the proper port

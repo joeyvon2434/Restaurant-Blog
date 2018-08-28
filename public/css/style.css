@@ -1,0 +1,18 @@
+
+#wrapper {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+}
+
+#content-box {
+    width: 80%;
+    grid-template-columns: repeat (12, 1fr);
+}

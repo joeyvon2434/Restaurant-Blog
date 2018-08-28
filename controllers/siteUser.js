@@ -13,6 +13,7 @@ var db = require("../models");
 
 module.exports = function (app) {
 
+
     //GET route for getting all of the reviews from the database
     app.get("/api/reviews", function(req,res) {
 
