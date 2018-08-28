@@ -1,0 +1,31 @@
+{
+  "name": "restaurant-blog",
+  "version": "1.0.0",
+  "description": "A restraunt blog web application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeyvon2434/Restaurant-Blog.git"
+  },
+  "keywords": [
+    "restaurant",
+    "blog"
+  ],
+  "author": "Joseph Von Edwins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeyvon2434/Restaurant-Blog/issues"
+  },
+  "homepage": "https://github.com/joeyvon2434/Restaurant-Blog#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0",
+    "sequelize": "^4.38.0"
+  }
+}
