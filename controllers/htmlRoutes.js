@@ -18,5 +18,10 @@ module.exports = function(app) {
         res.render("index");
     });
 
+    //send the user to the search page
+    app.get("/browse", function(req, res) {
+        res.render("browsePage");
+    });
+
 };//end module.exports
 

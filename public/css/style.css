@@ -67,8 +67,18 @@ body {
     border: 1px solid black;
 }
 
-.home-page-box img {
+.content-img {
     width: 100%;
+}
+
+#browse-page-content {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2%;
+}
+
+.browsepage-box {
+    text-align: center;
+    border: 1px solid black;
 }
 
 footer {
