@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(137, 173, 194);
+}
+
 
 #wrapper {
     position: absolute;
@@ -12,7 +16,67 @@
     display: grid;
 }
 
-#content-box {
-    width: 80%;
-    grid-template-columns: repeat (12, 1fr);
+#header-bar {
+    position: fixed;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    top: 0;
+    width: 100%;
+    background-color: rgb(196, 196, 196);
+    background-color: rgba(196, 196, 196, 0.25);
+    height: 56px;
 }
+
+#nav-menu {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0;
+    height: 100%;
+}
+
+#nav-menu button {
+    height: 100%;
+    border-radius: 0;
+    border-bottom-right-radius: 0.25em;
+    background-color: rgb(196, 196, 196);
+    background-color: rgba(196, 196, 196, 0.25);
+    border: 0;
+}
+
+#header-title {
+ grid-column-start: 3;
+ grid-column-end: 5;
+ text-align: center;
+}
+
+.content-box {
+    position: relative;
+    margin-top: 56px;
+    padding-top: 2%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+#home-page-content {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1%;
+}
+
+.homepage-box {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.home-page-box img {
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 0.25%;
+    text-align: center;
+    font-size: 13px;
+}
+
