@@ -43,7 +43,7 @@ require("./controllers/htmlRoutes.js")(app);
 
 
 //Sync the sequelize models and have express begin listenint to the proper port
-db.sequelize.sync({}).then(function() {
+db.sequelize.sync({force: true}).then(function() {
     app.listen(PORT, function() {
         console.log("Restaurant blog app listening on PORT " + PORT);
     });

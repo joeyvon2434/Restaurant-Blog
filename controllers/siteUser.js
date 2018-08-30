@@ -13,15 +13,12 @@ var db = require("../models");
 
 module.exports = function (app) {
 
+    //GET route to display all routes alphabetically
+    app.get("/browse/alphabetical", function (req, res){
 
-    //GET route for getting all of the reviews from the database
-    app.get("/api/reviews", function(req,res) {
-
-        db.Review.findAll({}).then(function(dbReview) {
-            res.render("searchResults", dbReview);
-        });
-
-    });//end route to get all reviews
+        //INSERT SEQUELIZE CALL
+        
+    });
 
 
     //GET route for geting a single review
@@ -47,6 +44,7 @@ module.exports = function (app) {
             res.render("topChoices", dbReview);
         });
     });//end route for the top choices
+
 
 
 }; //end module exports for routes

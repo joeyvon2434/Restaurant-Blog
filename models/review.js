@@ -50,8 +50,16 @@ module.exports = function(sequelize, DataTypes) {
         },
         topChoice: {
             type: DataTypes.BOOLEAN,
-            defaultVlaue: false,
+            defaultValue: false,
             allowNull: false
+        },
+        createdAt: {
+            type: DataTypes.DATE,
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP()')
+        },
+        updatedAt: {
+            type: DataTypes.DATE,
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP()')
         }
     });//close Review model setup
 
